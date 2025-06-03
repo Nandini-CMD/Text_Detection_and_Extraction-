@@ -41,7 +41,7 @@ def preprocess_image(image_path):
 
 def extract_text(image_path):
     img = cv2.imread(image_path)
-    config = "--oem 3 --psm 6"
+    config = "--oem 3 --psm 4"
     text = pytesseract.image_to_string(img, config=config)
     return text.strip()
 
@@ -61,6 +61,10 @@ def index():
             if preprocessed_path:
                 extracted_text = extract_text(preprocessed_path)
     return render_template('index.html', extracted_text=extracted_text, uploaded_filename=uploaded_filename)
+
+@app.route('/uploads/<filename>')
+def uploaded_file(filename):
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 if __name__ == '__main__':
     app.run(debug=True)
