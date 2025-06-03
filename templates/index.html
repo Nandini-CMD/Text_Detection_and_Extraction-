@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OCR Web App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .preview {
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 300px;
+            font-family: monospace;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>📷 OCR Text Extractor</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit">Upload & Extract</button>
+    </form>
+
+    {% if uploaded_filename %}
+    <div class="preview">
+        <h2>🖼 Uploaded Image:</h2>
+        <img src="{{ url_for('uploaded_file', filename=uploaded_filename) }}" alt="Uploaded Image">
+    </div>
+    {% endif %}
+
+    {% if extracted_text %}
+    <h2>📝 Extracted Text:</h2>
+    <textarea readonly>{{ extracted_text }}</textarea>
+    {% endif %}
+</div>
+</body>
+</html>
