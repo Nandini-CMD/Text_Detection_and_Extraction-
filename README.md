@@ -125,13 +125,6 @@ SCIENCE
 
 ---
 
-## 📃 License
-
-This project is licensed under the **MIT License**.  
-Feel free to use, modify, and distribute for personal or commercial use.
-
----
-
 ## 🤝 Acknowledgements
 
 - [EasyOCR](https://github.com/JaidedAI/EasyOCR)
