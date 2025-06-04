@@ -26,7 +26,7 @@ def index():
 
             # Use EasyOCR to extract text
             result = reader.readtext(file_path, detail=0)
-            extracted_text = "\n".join(result)
+            extracted_text = " ".join(result)
 
     return render_template('index.html', extracted_text=extracted_text, uploaded_filename=uploaded_filename)
 
