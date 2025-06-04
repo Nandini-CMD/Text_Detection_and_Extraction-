@@ -8,8 +8,8 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
-# EasyOCR Reader Initialization (only once)
-reader = easyocr.Reader(['en'])  # Add 'hi' or other languages as needed
+# EasyOCR Reader Initialization 
+reader = easyocr.Reader(['en'])  
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
