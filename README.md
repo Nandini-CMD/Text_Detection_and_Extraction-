@@ -101,7 +101,7 @@ http://127.0.0.1:5000/
 
 ## ✨ Sample Output
 
-** Website **
+Website 
 
 <img width="1161" height="677" alt="Screenshot 2025-07-24 234556" src="https://github.com/user-attachments/assets/89ecc436-e745-4919-9fe0-119df680cbb0" />
 
