@@ -101,20 +101,19 @@ http://127.0.0.1:5000/
 
 ## ✨ Sample Output
 
+** Website **
+
+<img width="1161" height="677" alt="Screenshot 2025-07-24 234556" src="https://github.com/user-attachments/assets/89ecc436-e745-4919-9fe0-119df680cbb0" />
+
 **Uploaded Image:**
 
-`example_1.png`
+<img width="1151" height="852" alt="Screenshot 2025-07-24 234653" src="https://github.com/user-attachments/assets/65b43f47-a5c6-4508-aba5-cb88b3da6a36" />
+
 
 **Extracted Text:**
-```
-DATA
-VISION
-BIG
-ANALYSIS
-SCIENCE
-```
 
----
+<img width="1190" height="507" alt="Screenshot 2025-07-24 234717" src="https://github.com/user-attachments/assets/9fd8de73-26e0-4ec6-ab26-97d0f3010678" />
+
 
 ## ✅ Future Improvements
 
